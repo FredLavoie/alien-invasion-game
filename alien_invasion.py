@@ -61,6 +61,7 @@ class AlienInvasion:
         """ Start a new game when player clicks 'PLay' """
         if not self.stats.game_active:
             self._start_game()
+            self.settings.initialize_dynamic_settings()
 
     def _start_game(self):
         """ Start game when spacebar is clicked """
@@ -121,6 +122,7 @@ class AlienInvasion:
             # Destroy existing bullets and create new fleet
             self.bullets.empty()
             self._create_fleet()
+            self.settings.increase_speed()
 
     def _update_aliens(self):
         """ Update the positions of all aliens in the fleet """
