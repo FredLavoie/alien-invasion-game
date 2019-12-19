@@ -4,11 +4,11 @@ This game is written in Python 3 and uses the [pygame](pygame.org) module. The g
 
 ### Screenshot
 
-#### Start screen
-<img src="docs/start_screen.png" width="800">
+#### Start screen:
+<img src="docs/start_screen.png" width="600">
 
-#### Game play
-<img src="docs/alien_invasion.png" width="800">
+#### Game play:
+<img src="docs/alien_invasion.png" width="600">
 
 ### Dependencies
 - [Python 3.7](https://www.python.org/)
