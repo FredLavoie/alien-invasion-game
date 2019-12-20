@@ -21,7 +21,7 @@ class AlienInvasion:
         self.settings = Settings()
 
         self.screen = pygame.display.set_mode(
-                        (self.settings.screen_width, self.settings.screen_height)
+            (self.settings.screen_width, self.settings.screen_height)
         )
         pygame.display.set_caption("Alien Invasion")
 
@@ -87,6 +87,8 @@ class AlienInvasion:
         elif event.key == pygame.K_a:
             self.ship.moving_left = True
         elif event.key == pygame.K_ESCAPE:
+            with open('score_save.txt', 'w') as file_object:
+                file_object.write(str(self.stats.high_score))
             sys.exit()
         elif event.key == pygame.K_BACKSLASH:
             self._fire_bullet()
